@@ -1,9 +1,6 @@
-# Ashwani Kumar - Cloud Engineer Portfolio
+# Muein - Cloud Engineer Portfolio
 
 🚀 Professional portfolio website showcasing my expertise in AWS, Kubernetes, and DevOps.
-
-## 🌐 Live Website
-**[https://ashwanikumar.live/](https://ashwanikumar.live)**
 
 ## 💼 About
 Cloud Engineer with 3+ years of experience architecting, deploying, and managing scalable cloud infrastructure on AWS. Expert in containerization, infrastructure automation, and CI/CD pipelines.
@@ -71,10 +68,10 @@ Any push to the `main` branch automatically triggers a new deployment on Netlify
 - Mobile-responsive viewport settings
 
 ## 📞 Contact
-- **Email:** ashwanikk56@gmail.com
-- **Phone/WhatsApp:** +91-7056950800
-- **LinkedIn:** [linkedin.com/in/ashwani-kumar-ak56](https://www.linkedin.com/in/ashwani-kumar-ak56)
-- **GitHub:** [github.com/ashwanik56](https://github.com/ashwanik56)
+- **Email:** muein.officeuse@gmail.com
+- **Phone/WhatsApp:** +91-9311789169
+- **LinkedIn:** [linkedin.com/in/ashwani-kumar-ak56](https://www.linkedin.com/in/muein-024a62176/)
+- **GitHub:** [github.com/ashwanik56](https://github.com/mueinofficeuse-eng)
 
 ## 🔧 Skills Showcased
 - **Cloud Platforms:** AWS (EC2, S3, Lambda, RDS, ECS, EKS, CloudFormation, VPC, Route53, IAM)
@@ -113,3 +110,4 @@ To update the portfolio:
 
 
 *Last Updated: December 2024*
+
