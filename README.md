@@ -97,19 +97,14 @@ To update the portfolio:
 3. Netlify automatically deploys the updates within 1-2 minutes
 
 ## 📝 License
-© 2024 Ashwani Kumar. All rights reserved.
-
-## 🙏 Acknowledgments
-- Tailwind CSS for utility-first styling
-- Netlify for seamless deployment and hosting
-- GitHub for version control and collaboration
+© 2026 Muein. All rights reserved.
 
 ---
 
-**Built with ❤️ by Ashwani Kumar**
+**Built with ❤️ by Muein**
 
 
-*Last Updated: December 2024*
+
 
 
 
