@@ -70,8 +70,8 @@ Any push to the `main` branch automatically triggers a new deployment on Netlify
 ## 📞 Contact
 - **Email:** muein.officeuse@gmail.com
 - **Phone/WhatsApp:** +91-9311789169
-- **LinkedIn:** [linkedin.com/in/ashwani-kumar-ak56](https://www.linkedin.com/in/muein-024a62176/)
-- **GitHub:** [github.com/ashwanik56](https://github.com/mueinofficeuse-eng)
+- **LinkedIn:** [inkedin.com/in/muein-024a62176](https://www.linkedin.com/in/muein-024a62176/)
+- **GitHub:** [github.com/mueinofficeuse-eng](https://github.com/mueinofficeuse-eng)
 
 ## 🔧 Skills Showcased
 - **Cloud Platforms:** AWS (EC2, S3, Lambda, RDS, ECS, EKS, CloudFormation, VPC, Route53, IAM)
@@ -110,5 +110,6 @@ To update the portfolio:
 
 
 *Last Updated: December 2024*
+
 
 
