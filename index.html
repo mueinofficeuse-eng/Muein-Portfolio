@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +8,25 @@
     <meta name="keywords" content="Cloud Engineer, AWS, Azure, DevOps, Terraform, CloudFormation, Muein">
     <meta name="author" content="Muein">
     <title>Muein - Cloud Engineer | AWS | Azure | DevOps</title>
-    
+
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         html {
             scroll-behavior: smooth;
         }
-        
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             background: linear-gradient(to bottom, #0f172a, #020617);
             color: #f1f5f9;
             line-height: 1.6;
         }
-        
+
         /* Navigation */
         nav {
             position: fixed;
@@ -36,7 +37,7 @@
             z-index: 1000;
             border-bottom: 1px solid #1e293b;
         }
-        
+
         .nav-container {
             max-width: 1280px;
             margin: 0 auto;
@@ -46,7 +47,7 @@
             align-items: center;
             height: 64px;
         }
-        
+
         .logo {
             font-size: 1.5rem;
             font-weight: bold;
@@ -54,28 +55,28 @@
             text-decoration: none;
             transition: color 0.3s;
         }
-        
+
         .logo:hover {
             color: #22d3ee;
         }
-        
+
         .nav-links {
             display: flex;
             gap: 2rem;
             list-style: none;
         }
-        
+
         .nav-links a {
             color: #cbd5e1;
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s;
         }
-        
+
         .nav-links a:hover {
             color: #06b6d4;
         }
-        
+
         .mobile-menu-btn {
             display: none;
             background: none;
@@ -84,7 +85,7 @@
             font-size: 1.5rem;
             cursor: pointer;
         }
-        
+
         /* Hero Section */
         .hero {
             min-height: 100vh;
@@ -94,11 +95,11 @@
             padding: 5rem 1rem;
             text-align: center;
         }
-        
+
         .hero-content {
             max-width: 56rem;
         }
-        
+
         .hero-icon {
             width: 128px;
             height: 128px;
@@ -110,27 +111,27 @@
             justify-content: center;
             box-shadow: 0 0 40px rgba(6, 182, 212, 0.3);
         }
-        
+
         .hero-icon svg {
             width: 64px;
             height: 64px;
             color: white;
         }
-        
+
         h1 {
             font-size: 3.5rem;
             font-weight: bold;
             margin-bottom: 1.5rem;
             color: white;
         }
-        
+
         .subtitle {
             font-size: 1.5rem;
             color: #06b6d4;
             font-weight: 600;
             margin-bottom: 1rem;
         }
-        
+
         .tagline {
             font-size: 1.25rem;
             color: #94a3b8;
@@ -139,7 +140,7 @@
             margin-left: auto;
             margin-right: auto;
         }
-        
+
         /* Stats */
         .stats {
             display: grid;
@@ -148,26 +149,26 @@
             max-width: 48rem;
             margin: 0 auto 3rem;
         }
-        
+
         .stat-card {
             background: rgba(15, 23, 42, 0.5);
             border: 1px solid #1e293b;
             border-radius: 0.5rem;
             padding: 1.5rem;
         }
-        
+
         .stat-number {
             font-size: 2rem;
             font-weight: bold;
             color: #06b6d4;
         }
-        
+
         .stat-label {
             font-size: 0.875rem;
             color: #94a3b8;
             margin-top: 0.25rem;
         }
-        
+
         /* Buttons */
         .btn-group {
             display: flex;
@@ -176,7 +177,7 @@
             flex-wrap: wrap;
             margin-bottom: 3rem;
         }
-        
+
         .btn {
             padding: 0.75rem 2rem;
             border-radius: 0.5rem;
@@ -187,33 +188,33 @@
             border: none;
             font-size: 1rem;
         }
-        
+
         .btn-primary {
             background: #06b6d4;
             color: #020617;
         }
-        
+
         .btn-primary:hover {
             background: #22d3ee;
             box-shadow: 0 0 20px rgba(6, 182, 212, 0.5);
         }
-        
+
         .btn-secondary {
             background: transparent;
             color: #cbd5e1;
             border: 2px solid #334155;
         }
-        
+
         .btn-secondary:hover {
             border-color: #06b6d4;
             color: #06b6d4;
         }
-        
+
         /* Sections */
         section {
             padding: 5rem 1rem;
         }
-        
+
         .section-title {
             font-size: 2.5rem;
             font-weight: bold;
@@ -221,21 +222,21 @@
             margin-bottom: 3rem;
             color: white;
         }
-        
+
         .section-title span {
             color: #06b6d4;
         }
-        
+
         .container {
             max-width: 1280px;
             margin: 0 auto;
         }
-        
+
         .container-small {
             max-width: 56rem;
             margin: 0 auto;
         }
-        
+
         /* About Section */
         .about-card {
             background: #0f172a;
@@ -244,14 +245,14 @@
             padding: 2rem;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
-        
+
         .about-text {
             font-size: 1.125rem;
             color: #cbd5e1;
             margin-bottom: 1.5rem;
             line-height: 1.8;
         }
-        
+
         .achievement-box {
             background: #1e293b;
             border: 1px solid #334155;
@@ -259,31 +260,31 @@
             padding: 1.5rem;
             margin-bottom: 1.5rem;
         }
-        
+
         .achievement-title {
             color: #06b6d4;
             font-weight: 600;
             font-size: 1.125rem;
             margin-bottom: 1rem;
         }
-        
+
         .achievement-list {
             list-style: none;
         }
-        
+
         .achievement-list li {
             display: flex;
             gap: 0.5rem;
             margin-bottom: 0.75rem;
             color: #cbd5e1;
         }
-        
+
         .checkmark {
             color: #06b6d4;
             font-weight: bold;
             flex-shrink: 0;
         }
-        
+
         /* Social Links */
         .social-links {
             display: flex;
@@ -291,7 +292,7 @@
             gap: 1rem;
             margin-top: 2rem;
         }
-        
+
         .social-link {
             display: flex;
             align-items: center;
@@ -304,39 +305,39 @@
             text-decoration: none;
             transition: all 0.3s;
         }
-        
+
         .social-link:hover {
             border-color: #06b6d4;
             color: #06b6d4;
         }
-        
+
         .social-link svg {
             width: 20px;
             height: 20px;
         }
-        
+
         .download-btn {
             background: #06b6d4;
             color: #020617;
             font-weight: 600;
         }
-        
+
         .download-btn:hover {
             background: #22d3ee;
             box-shadow: 0 0 20px rgba(6, 182, 212, 0.5);
         }
-        
+
         /* Projects Section */
         .bg-dark {
             background: #0f172a;
         }
-        
+
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
         }
-        
+
         .project-card {
             background: #020617;
             border: 1px solid #1e293b;
@@ -344,13 +345,13 @@
             overflow: hidden;
             transition: all 0.3s;
         }
-        
+
         .project-card:hover {
             border-color: #06b6d4;
             box-shadow: 0 10px 30px rgba(6, 182, 212, 0.1);
             transform: translateY(-4px);
         }
-        
+
         .project-image {
             height: 192px;
             display: flex;
@@ -358,18 +359,18 @@
             justify-content: center;
             background: linear-gradient(135deg, #2563eb, #06b6d4);
         }
-        
+
         .project-image svg {
             width: 64px;
             height: 64px;
             color: white;
             opacity: 0.5;
         }
-        
+
         .project-content {
             padding: 1.5rem;
         }
-        
+
         .project-title {
             font-size: 1.25rem;
             font-weight: bold;
@@ -377,24 +378,24 @@
             color: white;
             transition: color 0.3s;
         }
-        
+
         .project-card:hover .project-title {
             color: #06b6d4;
         }
-        
+
         .project-description {
             color: #94a3b8;
             margin-bottom: 1rem;
             line-height: 1.6;
         }
-        
+
         .tech-tags {
             display: flex;
             flex-wrap: wrap;
             gap: 0.5rem;
             margin-bottom: 1rem;
         }
-        
+
         .tech-tag {
             padding: 0.25rem 0.75rem;
             background: #1e293b;
@@ -403,7 +404,7 @@
             font-size: 0.875rem;
             color: #cbd5e1;
         }
-        
+
         .project-link {
             display: inline-flex;
             align-items: center;
@@ -412,18 +413,18 @@
             text-decoration: none;
             font-weight: 500;
         }
-        
+
         .project-link:hover {
             color: #22d3ee;
         }
-        
+
         /* Skills Section */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 1.5rem;
         }
-        
+
         .skill-card {
             background: #0f172a;
             border: 1px solid #1e293b;
@@ -431,41 +432,41 @@
             padding: 1.5rem;
             transition: all 0.3s;
         }
-        
+
         .skill-card:hover {
             border-color: #06b6d4;
             transform: translateY(-4px);
         }
-        
+
         .skill-header {
             display: flex;
             align-items: center;
             gap: 0.75rem;
             margin-bottom: 1rem;
         }
-        
+
         .skill-icon {
             padding: 0.5rem;
             background: rgba(6, 182, 212, 0.1);
             border-radius: 0.5rem;
         }
-        
+
         .skill-icon svg {
             width: 24px;
             height: 24px;
             color: #06b6d4;
         }
-        
+
         .skill-name {
             font-size: 1.25rem;
             font-weight: bold;
             color: white;
         }
-        
+
         .skill-list {
             list-style: none;
         }
-        
+
         .skill-list li {
             display: flex;
             align-items: center;
@@ -473,7 +474,7 @@
             margin-bottom: 0.5rem;
             color: #94a3b8;
         }
-        
+
         .skill-bullet {
             width: 6px;
             height: 6px;
@@ -481,7 +482,7 @@
             border-radius: 50%;
             flex-shrink: 0;
         }
-        
+
         /* Contact Section */
         .contact-intro {
             text-align: center;
@@ -492,7 +493,7 @@
             margin-right: auto;
             font-size: 1.125rem;
         }
-        
+
         .contact-card {
             background: #020617;
             border: 1px solid #1e293b;
@@ -500,7 +501,7 @@
             padding: 2rem;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         }
-        
+
         .contact-method-card {
             display: block;
             padding: 1.5rem;
@@ -511,12 +512,12 @@
             transition: all 0.3s;
             cursor: pointer;
         }
-        
+
         .contact-method-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 10px 30px rgba(6, 182, 212, 0.2);
         }
-        
+
         /* Footer */
         footer {
             padding: 2rem 1rem;
@@ -524,11 +525,11 @@
             text-align: center;
             color: #64748b;
         }
-        
+
         footer p {
             margin: 0.5rem 0;
         }
-        
+
         /* Responsive */
         @media (max-width: 768px) {
             .nav-links {
@@ -542,71 +543,76 @@
                 display: none;
                 border-bottom: 1px solid #1e293b;
             }
-            
+
             .nav-links.active {
                 display: flex;
             }
-            
+
             .mobile-menu-btn {
                 display: block;
             }
-            
+
             h1 {
                 font-size: 2.5rem;
             }
-            
+
             .subtitle {
                 font-size: 1.25rem;
             }
-            
+
             .stats {
                 grid-template-columns: 1fr;
                 gap: 1rem;
             }
-            
+
             .btn-group {
                 flex-direction: column;
             }
-            
+
             .btn {
                 width: 100%;
             }
-            
+
             .social-links {
                 justify-content: center;
             }
         }
-        
+
         /* Animations */
         @keyframes bounce {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translateY(0);
             }
+
             50% {
                 transform: translateY(-10px);
             }
         }
-        
+
         .bounce {
             animation: bounce 2s infinite;
         }
-        
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        
+
         .fade-in {
             animation: fadeIn 0.6s ease-out;
         }
     </style>
 </head>
+
 <body>
     <!-- Navigation -->
     <nav>
@@ -627,13 +633,14 @@
         <div class="hero-content">
             <div class="hero-icon">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
                 </svg>
             </div>
             <h1>Muein</h1>
             <p class="subtitle">Cloud Engineer • AWS • Azure • DevOps</p>
             <p class="tagline"></p>
-            
+
             <div class="stats">
                 <div class="stat-card">
                     <div class="stat-number">3+</div>
@@ -653,7 +660,7 @@
                 <a href="#contact" class="btn btn-primary">Get In Touch</a>
                 <a href="#about" class="btn btn-secondary">About Me</a>
             </div>
-            
+
             <div class="bounce" style="display: inline-block; color: #06b6d4; font-size: 2rem;">↓</div>
         </div>
     </section>
@@ -664,50 +671,65 @@
             <h2 class="section-title">About <span>Me</span></h2>
             <div class="about-card">
                 <p class="about-text">
-                    Cloud Engineer with 3+ years of experience specialized in cloud architecture, deployment, and automation. Expert in Infrastructure as Code using Terraform and CloudFormation, and implementing robust CI/CD pipelines to streamline development workflows.
+                    Cloud Engineer with 3+ years of experience specialized in cloud architecture, deployment, and
+                    automation. Expert in Infrastructure as Code using Terraform and CloudFormation, and implementing
+                    robust CI/CD pipelines to streamline development workflows.
                 </p>
                 <p class="about-text">
-                    Proven track record of improving system uptime and performance through strategic cloud automation and cost optimization techniques, including effective tagging and lifecycle policies. Successfully managed complex cloud environments across AWS and Azure.
+                    Proven track record of improving system uptime and performance through strategic cloud automation
+                    and cost optimization techniques, including effective tagging and lifecycle policies. Successfully
+                    managed complex cloud environments across AWS and Azure.
                 </p>
-                
+
                 <div class="achievement-box">
                     <h3 class="achievement-title">Key Achievements</h3>
                     <ul class="achievement-list">
-                        <li><span class="checkmark">✓</span> <span>Improved system uptime and performance with cloud automation</span></li>
-                        <li><span class="checkmark">✓</span> <span>Reduced operational costs using tagging and lifecycle policies</span></li>
-                        <li><span class="checkmark">✓</span> <span>Two-time silver medalist in intercollege technical competitions</span></li>
+                        <li><span class="checkmark">✓</span> <span>Improved system uptime and performance with cloud
+                                automation</span></li>
+                        <li><span class="checkmark">✓</span> <span>Reduced operational costs using tagging and lifecycle
+                                policies</span></li>
+                        <li><span class="checkmark">✓</span> <span>Two-time silver medalist in intercollege technical
+                                competitions</span></li>
                     </ul>
                 </div>
-                
-                
+
+
                 <div class="social-links">
-                    <a href="https://github.com/mueinofficeuse-eng" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <a href="https://github.com/mueinofficeuse-eng" target="_blank" rel="noopener noreferrer"
+                        class="social-link">
                         <svg fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                         </svg>
                         GitHub
                     </a>
-                    <a href="https://linkedin.com/in/muein-024a62176" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <a href="https://linkedin.com/in/muein-024a62176" target="_blank" rel="noopener noreferrer"
+                        class="social-link">
                         <svg fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                         </svg>
                         LinkedIn
                     </a>
                     <a href="https://wa.me/919311789169" target="_blank" rel="noopener noreferrer" class="social-link">
                         <svg fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
                         </svg>
                         WhatsApp
                     </a>
                     <a href="mailto:muein.officeuse@gmail.com" class="social-link">
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                            </path>
                         </svg>
                         Email
                     </a>
-                    <a href="#" class="social-link download-btn" onclick="alert('Resume download would be available here'); return false;">
+                    <a href="Muein.pdf" download="Muein.pdf" class="social-link download-btn">
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
                         </svg>
                         Download Resume
                     </a>
@@ -722,12 +744,14 @@
         <div class="container">
             <h2 class="section-title">Skills & <span>Expertise</span></h2>
             <div class="skills-grid">
-                
+
                 <div class="skill-card">
                     <div class="skill-header">
                         <div class="skill-icon">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z">
+                                </path>
                             </svg>
                         </div>
                         <h3 class="skill-name">Cloud Architecture</h3>
@@ -743,7 +767,8 @@
                     <div class="skill-header">
                         <div class="skill-icon">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
                             </svg>
                         </div>
                         <h3 class="skill-name">IaC & Automation</h3>
@@ -759,7 +784,9 @@
                     <div class="skill-header">
                         <div class="skill-icon">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01">
+                                </path>
                             </svg>
                         </div>
                         <h3 class="skill-name">Compute & Serverless</h3>
@@ -775,7 +802,9 @@
                     <div class="skill-header">
                         <div class="skill-icon">
                             <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4">
+                                </path>
                             </svg>
                         </div>
                         <h3 class="skill-name">DevOps & Monitoring</h3>
@@ -796,97 +825,137 @@
         <div class="container-small">
             <h2 class="section-title">Get In <span>Touch</span></h2>
             <p class="contact-intro">
-                I'm currently open to new opportunities and collaborations. Whether you need help with cloud infrastructure, DevOps automation, or Kubernetes deployments, I'd love to hear from you. Available for freelance projects, consulting engagements, and full-time positions.
+                I'm currently open to new opportunities and collaborations. Whether you need help with cloud
+                infrastructure, DevOps automation, or Kubernetes deployments, I'd love to hear from you. Available for
+                freelance projects, consulting engagements, and full-time positions.
             </p>
             <div class="contact-card">
                 <div style="text-align: center; margin-bottom: 2rem;">
-                    <p style="color: #06b6d4; font-size: 1.125rem; font-weight: 600; margin-bottom: 0.5rem;">Quick Response Guaranteed</p>
+                    <p style="color: #06b6d4; font-size: 1.125rem; font-weight: 600; margin-bottom: 0.5rem;">Quick
+                        Response Guaranteed</p>
                     <p style="color: #94a3b8;">I typically respond within 2-4 hours during business days</p>
                 </div>
-                
+
                 <div style="display: grid; gap: 1rem; margin-bottom: 2rem;">
-                    <a href="https://wa.me/919311789169?text=Hi%20Muein%2C%20I%20found%20your%20portfolio" target="_blank" rel="noopener noreferrer" class="contact-method-card" style="background: linear-gradient(135deg, #25D366, #128C7E); border: none;">
+                    <a href="https://wa.me/919311789169?text=Hi%20Muein%2C%20I%20found%20your%20portfolio"
+                        target="_blank" rel="noopener noreferrer" class="contact-method-card"
+                        style="background: linear-gradient(135deg, #25D366, #128C7E); border: none;">
                         <div style="display: flex; align-items: center; gap: 1rem;">
                             <div style="background: rgba(255, 255, 255, 0.2); padding: 1rem; border-radius: 0.75rem;">
-                                <svg style="width: 32px; height: 32px; color: white;" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                                <svg style="width: 32px; height: 32px; color: white;" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
                                 </svg>
                             </div>
                             <div style="flex: 1; text-align: left;">
-                                <div style="font-weight: 700; font-size: 1.25rem; color: white; margin-bottom: 0.25rem;">WhatsApp</div>
-                                <div style="color: rgba(255, 255, 255, 0.9); font-size: 0.875rem;">Fastest response - Message me directly</div>
+                                <div
+                                    style="font-weight: 700; font-size: 1.25rem; color: white; margin-bottom: 0.25rem;">
+                                    WhatsApp</div>
+                                <div style="color: rgba(255, 255, 255, 0.9); font-size: 0.875rem;">Fastest response -
+                                    Message me directly</div>
                             </div>
                             <div>
-                                <svg style="width: 24px; height: 24px; color: white;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                <svg style="width: 24px; height: 24px; color: white;" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
                                 </svg>
                             </div>
                         </div>
                     </a>
 
-                    <a href="https://linkedin.com/in/muein-024a62176" target="_blank" rel="noopener noreferrer" class="contact-method-card" style="background: linear-gradient(135deg, #0077B5, #00A0DC); border: none;">
+                    <a href="https://linkedin.com/in/muein-024a62176" target="_blank" rel="noopener noreferrer"
+                        class="contact-method-card"
+                        style="background: linear-gradient(135deg, #0077B5, #00A0DC); border: none;">
                         <div style="display: flex; align-items: center; gap: 1rem;">
                             <div style="background: rgba(255, 255, 255, 0.2); padding: 1rem; border-radius: 0.75rem;">
-                                <svg style="width: 32px; height: 32px; color: white;" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                <svg style="width: 32px; height: 32px; color: white;" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
                                 </svg>
                             </div>
                             <div style="flex: 1; text-align: left;">
-                                <div style="font-weight: 700; font-size: 1.25rem; color: white; margin-bottom: 0.25rem;">LinkedIn</div>
-                                <div style="color: rgba(255, 255, 255, 0.9); font-size: 0.875rem;">Connect professionally and view my network</div>
+                                <div
+                                    style="font-weight: 700; font-size: 1.25rem; color: white; margin-bottom: 0.25rem;">
+                                    LinkedIn</div>
+                                <div style="color: rgba(255, 255, 255, 0.9); font-size: 0.875rem;">Connect
+                                    professionally and view my network</div>
                             </div>
                             <div>
-                                <svg style="width: 24px; height: 24px; color: white;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                <svg style="width: 24px; height: 24px; color: white;" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
                                 </svg>
                             </div>
                         </div>
                     </a>
 
-                    <a href="mailto:muein.officeuse@gmail.com?subject=Portfolio%20Inquiry" class="contact-method-card" style="background: linear-gradient(135deg, #EA4335, #FBBC05); border: none;">
+                    <a href="mailto:muein.officeuse@gmail.com?subject=Portfolio%20Inquiry" class="contact-method-card"
+                        style="background: linear-gradient(135deg, #EA4335, #FBBC05); border: none;">
                         <div style="display: flex; align-items: center; gap: 1rem;">
                             <div style="background: rgba(255, 255, 255, 0.2); padding: 1rem; border-radius: 0.75rem;">
-                                <svg style="width: 32px; height: 32px; color: white;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                <svg style="width: 32px; height: 32px; color: white;" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                    </path>
                                 </svg>
                             </div>
                             <div style="flex: 1; text-align: left;">
-                                <div style="font-weight: 700; font-size: 1.25rem; color: white; margin-bottom: 0.25rem;">Email</div>
-                                <div style="color: rgba(255, 255, 255, 0.9); font-size: 0.875rem;">muein.officeuse@gmail.com</div>
+                                <div
+                                    style="font-weight: 700; font-size: 1.25rem; color: white; margin-bottom: 0.25rem;">
+                                    Email</div>
+                                <div style="color: rgba(255, 255, 255, 0.9); font-size: 0.875rem;">
+                                    muein.officeuse@gmail.com</div>
                             </div>
                             <div>
-                                <svg style="width: 24px; height: 24px; color: white;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                <svg style="width: 24px; height: 24px; color: white;" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
                                 </svg>
                             </div>
                         </div>
                     </a>
 
-                    <a href="https://github.com/mueinofficeuse-eng" target="_blank" rel="noopener noreferrer" class="contact-method-card">
+                    <a href="https://github.com/mueinofficeuse-eng" target="_blank" rel="noopener noreferrer"
+                        class="contact-method-card">
                         <div style="display: flex; align-items: center; gap: 1rem;">
                             <div style="background: rgba(6, 182, 212, 0.1); padding: 1rem; border-radius: 0.75rem;">
-                                <svg style="width: 32px; height: 32px; color: #06b6d4;" fill="currentColor" viewBox="0 0 24 24">
-                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                <svg style="width: 32px; height: 32px; color: #06b6d4;" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                                 </svg>
                             </div>
                             <div style="flex: 1; text-align: left;">
-                                <div style="font-weight: 700; font-size: 1.25rem; color: white; margin-bottom: 0.25rem;">GitHub</div>
+                                <div
+                                    style="font-weight: 700; font-size: 1.25rem; color: white; margin-bottom: 0.25rem;">
+                                    GitHub</div>
                                 <div style="color: #94a3b8; font-size: 0.875rem;">View my code and contributions</div>
                             </div>
                             <div>
-                                <svg style="width: 24px; height: 24px; color: #06b6d4;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                <svg style="width: 24px; height: 24px; color: #06b6d4;" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
                                 </svg>
                             </div>
                         </div>
                     </a>
                 </div>
 
-                <div style="text-align: center; padding: 1.5rem; background: rgba(6, 182, 212, 0.1); border: 1px solid rgba(6, 182, 212, 0.3); border-radius: 0.75rem;">
+                <div
+                    style="text-align: center; padding: 1.5rem; background: rgba(6, 182, 212, 0.1); border: 1px solid rgba(6, 182, 212, 0.3); border-radius: 0.75rem;">
                     <p style="color: #cbd5e1; margin-bottom: 0.5rem;">📍 <strong>Based in:</strong> New Delhi, India</p>
-                    <p style="color: #cbd5e1; margin-bottom: 0.5rem;">💼 <strong>Available for:</strong> Remote Work • Freelance • Contract • Full-time</p>
+                    <p style="color: #cbd5e1; margin-bottom: 0.5rem;">💼 <strong>Available for:</strong> Remote Work •
+                        Freelance • Contract • Full-time</p>
                     <p style="color: #cbd5e1; margin-bottom: 0.5rem;">⏰ <strong>Timezone:</strong> IST (UTC+5:30)</p>
-                    <p style="color: #06b6d4; font-weight: 600; margin-top: 1rem;">🌍 Open to remote opportunities worldwide!</p>
+                    <p style="color: #06b6d4; font-weight: 600; margin-top: 1rem;">🌍 Open to remote opportunities
+                        worldwide!</p>
                 </div>
             </div>
         </div>
@@ -904,12 +973,12 @@
         // Mobile menu toggle
         const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const navLinks = document.getElementById('navLinks');
-        
+
         if (mobileMenuBtn && navLinks) {
             mobileMenuBtn.addEventListener('click', () => {
                 navLinks.classList.toggle('active');
             });
-            
+
             // Close menu when clicking on a link
             const links = navLinks.querySelectorAll('a');
             links.forEach(link => {
@@ -918,13 +987,13 @@
                 });
             });
         }
-        
+
         // Set current year
         const yearSpan = document.getElementById('year');
         if (yearSpan) {
             yearSpan.textContent = new Date().getFullYear();
         }
-        
+
         // Smooth scroll offset for fixed nav
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -941,4 +1010,5 @@
         });
     </script>
 </body>
+
 </html>
