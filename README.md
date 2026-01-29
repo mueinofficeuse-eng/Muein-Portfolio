@@ -40,7 +40,7 @@ portfolio/
 This website is automatically deployed using:
 - **GitHub** for version control and source code hosting
 - **Netlify** for continuous deployment and hosting
-- **Custom domain** (ashwanikumar.live) configured via GoDaddy nameservers
+- **Custom domain** (muein.cloud) configured via GoDaddy nameservers
 
 ### Continuous Deployment
 Any push to the `main` branch automatically triggers a new deployment on Netlify.
@@ -70,7 +70,7 @@ Any push to the `main` branch automatically triggers a new deployment on Netlify
 ## 📞 Contact
 - **Email:** muein.officeuse@gmail.com
 - **Phone/WhatsApp:** +91-9311789169
-- **LinkedIn:** [inkedin.com/in/muein-024a62176](https://www.linkedin.com/in/muein-024a62176/)
+- **LinkedIn:** [linkedin.com/in/muein-024a62176](https://www.linkedin.com/in/muein-024a62176/)
 - **GitHub:** [github.com/mueinofficeuse-eng](https://github.com/mueinofficeuse-eng)
 
 ## 🔧 Skills Showcased
@@ -81,8 +81,9 @@ Any push to the `main` branch automatically triggers a new deployment on Netlify
 
 ## 📈 Featured Projects
 
-### 1. Cloud-Native Microservices Platform
-Scalable microservices architecture on AWS EKS handling 50K+ requests/day with automated CI/CD.
+### 1. Face Recognition Attendance System
+An automated Face Attendance System powered by AWS leveraging serverless architecture for employees and administrators.
+[View on GitHub](https://github.com/mueinofficeuse-eng/face-recognition-attendance-system)
 
 ### 2. Multi-Region High Availability Infrastructure
 Multi-region AWS infrastructure with automated failover achieving 99.99% uptime.
