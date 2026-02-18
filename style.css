@@ -17,6 +17,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-primary);
@@ -343,6 +347,39 @@ body {
     opacity: 0.8;
 }
 
+.hero-footer {
+    opacity: 0.6;
+}
+
+.hero-footer-text {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+    font-weight: 500;
+}
+
+.trusted-logos {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    filter: grayscale(1) brightness(2);
+}
+
+.trusted-logos span {
+    font-weight: 800;
+    font-size: 22px;
+    color: white;
+    letter-spacing: -0.5px;
+}
+
+@media (max-width: 768px) {
+    .trusted-logos {
+        gap: 24px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 .hero-actions {
     display: flex;
     align-items: center;
@@ -565,19 +602,30 @@ body {
 }
 
 .nav-item {
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 6px;
-    color: #ffffff;
+    border-radius: 8px;
+    color: var(--text-secondary);
     text-decoration: none;
     transition: var(--transition);
 }
 
+.nav-item svg {
+    width: 20px;
+    height: 20px;
+}
+
 .nav-item:hover {
     background: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+}
+
+.nav-item.active {
+    background: var(--accent-color);
+    color: #ffffff;
 }
 
 /* Tool Cards Grid */
@@ -794,11 +842,41 @@ h1 {
 }
 
 h2 {
-    font-size: 58px;
-    font-weight: 500;
+    font-size: 48px;
+    font-weight: 600;
     line-height: 1.1;
     color: #ffffff;
-    margin-bottom: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.card-icon-abs {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    opacity: 0.5;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.about-text {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--text-secondary);
+}
+
+#form-status {
+    display: none;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+#form-status i {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
 }
 
 /* Animations */
@@ -819,23 +897,192 @@ h2 {
 }
 
 /* Responsive */
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
+    .container {
+        gap: 60px;
+        padding: 120px 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 72px;
+    }
+}
+
+@media (max-width: 1024px) {
     .container {
         grid-template-columns: 1fr;
+        padding: 100px 24px;
+        gap: 48px;
     }
 
     .sidebar {
         position: relative;
-        height: auto;
         top: 0;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
     }
 
-    .main-content {
+    .hero-content h1 {
+        font-size: 64px;
+        text-align: center;
+    }
+
+    .hero-sub {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-stats {
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .hero-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-headline {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .contact-headline {
+        font-size: 56px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 48px;
+        letter-spacing: -2px;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        margin-bottom: 40px;
+    }
+
+    .hero-stat-val {
+        font-size: 48px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .tools-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bento-grid {
         grid-template-columns: 1fr;
     }
 
     .span-2 {
         grid-column: span 1;
+    }
+
+    .skills-list {
+        grid-template-columns: 1fr;
+    }
+
+    .exp-header h3 {
+        font-size: 24px;
+    }
+
+    .contact-headline {
+        font-size: 42px;
+        letter-spacing: -1px;
+    }
+
+    .contact-form-card {
+        padding: 24px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+    }
+
+    /* Detail Page Mobile */
+    .detail-header h1 {
+        font-size: 42px !important;
+        letter-spacing: -1px;
+    }
+
+    .detail-container {
+        margin: 80px auto !important;
+        padding: 0 20px !important;
+    }
+
+    .detail-section h2 {
+        font-size: 24px !important;
+    }
+
+    .detail-date {
+        margin-bottom: 40px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding-top: 80px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .section-headline {
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+
+    .experience-card {
+        padding: 24px;
+    }
+
+    .exp-header h3 {
+        font-size: 20px;
+    }
+
+    .floating-nav {
+        width: 90%;
+        padding: 0 4px;
+    }
+
+    .nav-item {
+        width: 32px;
+        height: 32px;
+    }
+
+    .profile-info h3 {
+        font-size: 32px;
+    }
+
+    .experience-card {
+        padding: 20px;
+    }
+
+    .detail-header h1 {
+        font-size: 32px !important;
     }
 }
 

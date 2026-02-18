@@ -80,23 +80,19 @@
                 </div>
 
                 <!-- Trusted By / Logos -->
-                <div class="hero-footer" style="opacity: 0.6;">
-                    <p style="font-size: 13px; color: var(--text-secondary); margin-bottom: 24px; font-weight: 500;">
-                        Relied on by companies near, far, and worldwide</p>
-                    <div style="display: flex; gap: 48px; align-items: center; filter: grayscale(1) brightness(2);">
-                        <span
-                            style="font-weight: 800; font-size: 22px; color: white; letter-spacing: -0.5px;">AWS</span>
-                        <span
-                            style="font-weight: 800; font-size: 22px; color: white; letter-spacing: -0.5px;">Azure</span>
-                        <span
-                            style="font-weight: 800; font-size: 22px; color: white; letter-spacing: -0.5px;">GCP</span>
+                <div class="hero-footer">
+                    <p class="hero-footer-text">Relied on by companies near, far, and worldwide</p>
+                    <div class="trusted-logos">
+                        <span>AWS</span>
+                        <span>Azure</span>
+                        <span>GCP</span>
                     </div>
                 </div>
             </section>
 
             <!-- Projects Section -->
             <section id="projects" class="content-section">
-                <h2 style="font-size: 48px; margin-bottom: 40px;">Featured Projects</h2>
+                <h2>Featured Projects</h2>
                 <div class="bento-grid">
                     <a href="https://github.com/mueinofficeuse-eng/face-recognition-attendance-system"
                         class="bento-card project-item" target="_blank">
@@ -106,8 +102,7 @@
                         </div>
                         <h4>Face Recognition System</h4>
                         <p>Automated attendance powered by AWS Rekognition and Serverless.</p>
-                        <i data-lucide="arrow-up-right"
-                            style="position: absolute; top: 1.5rem; right: 1.5rem; opacity: 0.5;"></i>
+                        <i data-lucide="arrow-up-right" class="card-icon-abs"></i>
                     </a>
 
                     <a href="https://github.com/mueinofficeuse-eng/aws-cicd-project" class="bento-card project-item"
@@ -118,8 +113,7 @@
                         </div>
                         <h4>AWS CI/CD Pipeline</h4>
                         <p>End-to-end automated deployment for containerized apps.</p>
-                        <i data-lucide="arrow-up-right"
-                            style="position: absolute; top: 1.5rem; right: 1.5rem; opacity: 0.5;"></i>
+                        <i data-lucide="arrow-up-right" class="card-icon-abs"></i>
                     </a>
 
                     <a href="https://github.com/mueinofficeuse-eng/Devops_Automated_Dashboard"
@@ -130,8 +124,7 @@
                         </div>
                         <h4>DevOps Automation Dashboard</h4>
                         <p>Infrastructure health tracking with automated provisioning.</p>
-                        <i data-lucide="arrow-up-right"
-                            style="position: absolute; top: 1.5rem; right: 1.5rem; opacity: 0.5;"></i>
+                        <i data-lucide="arrow-up-right" class="card-icon-abs"></i>
                     </a>
                 </div>
             </section>
@@ -282,7 +275,7 @@
                     </div>
                 </div>
 
-                <div class="bento-grid" style="margin-top: 40px;">
+                <div class="bento-grid mt-40">
                     <div class="bento-card span-2">
                         <h3 class="card-title"><i data-lucide="layers"></i> Expertise Overview</h3>
                         <div class="skills-list">
@@ -352,11 +345,11 @@
 
             <!-- About Section -->
             <section id="about" class="content-section">
-                <h2 style="font-size: 48px; margin-bottom: 40px;">About Me</h2>
+                <h2>About Me</h2>
                 <div class="bento-grid">
                     <div class="bento-card span-2 about-card">
                         <h3 class="card-title"><i data-lucide="user"></i> Background</h3>
-                        <p style="font-size: 1.25rem; line-height: 1.6; color: var(--text-secondary);">Cloud Engineer
+                        <p class="about-text">Cloud Engineer
                             and DevOps Engineer with 3+ years of experience designing, deploying, and managing scalable,
                             highly available infrastructure on AWS and Azure. Proven expertise in building secure,
                             cost-optimized cloud architectures using Infrastructure as Code (Terraform, CloudFormation).
@@ -411,7 +404,7 @@
 
                         <button type="submit" class="submit-btn" id="submit-btn">Send</button>
                     </form>
-                    <div id="form-status" style="display: none; margin-top: 20px; font-weight: 600;">
+                    <div id="form-status">
                         <!-- Status text will be injected here -->
                     </div>
                 </div>
