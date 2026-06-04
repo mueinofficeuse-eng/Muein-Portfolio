@@ -18,7 +18,7 @@ This repository contains the source code for the personal portfolio website of *
 
 - `index.html` - The main and single-page portfolio application.
 - `style.css` - Custom styling for the application (modern UI/UX).
-- `alois-tech.html`, `daksh-concentrix.html`, `wns-global.html` - Detailed pages for professional work experiences.
+- `ameya-services.html`, `daksh-concentrix.html`, `wns-global.html` - Detailed pages for professional work experiences.
 - `Muein_Resume.pdf` - Downloadable resume file.
 - `.github/workflows/deploy.yml` - GitHub Actions workflow file that automates deployment to the AWS EC2 instance.
 
